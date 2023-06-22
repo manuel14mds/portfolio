@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /* --color-primary: #6495ED; */
+  /* --color-primary: #FFCB74; */
+  --color-primary: #B89A5E;
+  --color-black: #252525;
+  --color-gray: #959595;
+  --color-lightgray: #D0D0D0;
+  --color-sesalt: #F6F6F6;
+
+  /* thin-100, extralight-200, light-300, regular-400, medium-500, semibold-700, bold-700 */
+  --font: 'Roboto Serif', serif;
+  font-family: var(--font);
+}
+.scroll-tracker{
+  position: fixed;
+  inset: auto 0 0 0;
+  height: 0.5rem;
+  background-color: var(--color-primary);
+  transform-origin: left;
+}
+/* NAVBAR */
+.nav-link{
+  color: var(--color-black) !important;
+}
+.activePage{
+  color: var(--color-primary) !important;
+}
+
+.rs{
+  height: 500px;
+  background-color: var(--color-lightgray);
+  border: 1px black solid;
+  margin-bottom: 15px;
+}
+/* ############################################################## MEDIA QUERY - 960px - ##############################################################*/
+@media (min-width: 960px) {}
