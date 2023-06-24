@@ -13,6 +13,12 @@
     <!-- Font-Awesome 6.4.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Email.Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!-- style -->
     <link rel="stylesheet" href="./styles/index.css">
 </head>
@@ -74,22 +80,22 @@
 
 
     <footer>
-        <div class="contact">
+        <div class="contact container-xxl">
             <h2 class="contact-name">MANUEL FLOREZ</h2>
-            <form action="" class="container form">
+            <form action="" id="form" class="container form">
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="name" placeholder="NAME/COMPANY">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="NAME/COMPANY" required>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="EMAIL@example.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="YOUR EMAIL" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" required>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="about" placeholder="ABOUT">
+                    <input type="text" class="form-control" id="about" name="about" placeholder="ABOUT" required>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="MESSAGE"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="MESSAGE" required></textarea>
                 </div>
-                <button type="button" class="btn btn-primary sendContactBtn">Send</button>
+                <button type="submit" id="sendContactBtn" class="btn btn-primary sendContactBtn">Send</button>
             </form>
         </div>
         <div class="moreInfo container">
@@ -103,7 +109,7 @@
                 </li>
 
                 <li>
-                    <a class="socialmedia-link" href=""> <i class="fa-brands fa-square-whatsapp"></i> Whatsapp</a>
+                    <a class="socialmedia-link" href=""> <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
                 </li>
 
                 <li>
@@ -125,8 +131,13 @@
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
 
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
     <!-- javascript -->
     <script src="./scripts/animation.js" type="module" defer></script>
+    <script src="./scripts/emailsender.js"></script>
+
 </body>
 
 </html>

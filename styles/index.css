@@ -93,11 +93,11 @@ footer .moreInfo .copyright-legend{
   /* +=+=+=+=+=+= FOOTER  start +=+=+=+=+=+= */
 
 footer .contact{
-  max-width: 1390px;
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 footer .contact .contact-name{
   width: 40%;
@@ -106,8 +106,10 @@ footer .contact .form{
   max-width: 540px;
 }
 footer .contact .form .sendContactBtn{
-
   width: 150px;
+}
+footer .moreInfo{
+  padding: 50px 0px;
 }
 footer .moreInfo .socialmedia-list li .socialmedia-link{
   font-size: 1.3rem;

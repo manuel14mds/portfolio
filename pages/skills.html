@@ -8,6 +8,15 @@
     <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+    <!-- Font-Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Email.Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!-- style -->
     <link rel="stylesheet" href="../styles/index.css">
 </head>
@@ -47,9 +56,61 @@
             </div>
         </nav>
     </header>
+
+
+    <footer>
+        <div class="contact container-xxl">
+            <h2 class="contact-name">MANUEL FLOREZ</h2>
+            <form action="" id="form" class="container form">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="NAME/COMPANY" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="YOUR EMAIL" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="about" name="about" placeholder="ABOUT" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="MESSAGE" required></textarea>
+                </div>
+                <button type="submit" id="sendContactBtn" class="btn btn-primary sendContactBtn">Send</button>
+            </form>
+        </div>
+        <div class="moreInfo container">
+            <ul class="socialmedia-list">
+                <li>
+                    <a class="socialmedia-link" href=""> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </li>
+
+                <li>
+                    <a class="socialmedia-link" href=""> <i class="fa-brands fa-github"></i> Github Profile</a>
+                </li>
+
+                <li>
+                    <a class="socialmedia-link" href=""> <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                </li>
+
+                <li>
+                    <a class="socialmedia-link" href=""> <i class="fa-solid fa-envelope"></i> manuel14mds@gmail.com</a>
+                </li>
+            </ul>
+            <legend class="copyright-legend"><i class="fa-solid fa-copyright"></i> Copyright Manuel Florez</legend>
+        </div>
+    </footer>
+
+    <div class="scroll-tracker"></div>
     
     <!-- Bootstrap 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- javascript -->
+    <script src="../scripts/animation.js" type="module" defer></script>
+    <script src="../scripts/emailsender.js"></script>
+
 </body>
 </html>
