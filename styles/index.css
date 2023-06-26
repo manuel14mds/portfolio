@@ -25,13 +25,16 @@
   transform-origin: left;
 }
 /* +=+=+=+=+=+= NAVBAR  start +=+=+=+=+=+= */
+.navbar-toggler{
+  border-radius: 2px;
+}
 .nav-link{
   color: var(--color-black) !important;
 }
 .activePage{
   color: var(--color-primary) !important;
 }
-/* +=+=+=+=+=+= NAVBAR  start +=+=+=+=+=+= */
+/* +=+=+=+=+=+= NAVBAR  end   +=+=+=+=+=+= */
 /* --------------------------------------- */
 /* +=+=+=+=+=+= FOOTER  start +=+=+=+=+=+= */
 footer{
@@ -55,6 +58,9 @@ footer .contact .sendContactBtn:hover{
   background-color: var(--color-lightgray);
   color: var(--color-black);
   border-color: var(--color-sesalt);
+}
+.form-control{
+  border-radius: 2px;
 }
 footer .moreInfo{
   text-align: center;

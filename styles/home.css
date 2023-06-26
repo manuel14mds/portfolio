@@ -1,0 +1,115 @@
+/* +=+=+=+=+=+= HOME  start +=+=+=+=+=+= */
+.P_home{
+    background-color: var(--color-black);
+    background-image: url(../media/images/portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 250px;
+    position: relative;
+}
+.P_home-text{
+    background-color: var(--color-lightgray);
+    opacity: 0.8;
+    position: absolute;
+    inset: auto 0 0 auto;
+    text-align: right;
+    color: var(--color-black);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 2px;
+}
+.P_main-text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    opacity: 1.0;
+}
+.P_second-text{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.D_home{
+    /* no showing on mobile resolution */
+    display: none;
+}
+/* +=+=+=+=+=+= HOME  end   +=+=+=+=+=+= */
+
+
+@media (min-width: 570px) {
+    /* +=+=+=+=+=+= HOME  star +=+=+=+=+=+= */
+    .P_home{
+        display: none;
+    }
+    .D_home{
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        padding: 0px;
+    }
+    .D_home .D_home-item{
+        width: 50%;
+        height: 300px;
+    }
+    .D_home .D_home-portrait{
+        background-color: var(--color-black);
+        background-image: url(../media/images/portrait.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .D_home .D_home-text{
+        color: var(--color-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .D_home .D_home-text .D_main-text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+    .D_home .D_home-text .D_second-text {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* +=+=+=+=+=+= HOME  end   +=+=+=+=+=+= */
+}
+@media (min-width: 825px) {
+    /* +=+=+=+=+=+= HOME  star +=+=+=+=+=+= */
+    .D_home .D_home-text .D_main-text {
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+    .D_home .D_home-text .D_second-text {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    /* +=+=+=+=+=+= HOME  end   +=+=+=+=+=+= */
+}
+
+
+@media (min-width: 1300px) {
+    /* +=+=+=+=+=+= HOME  star +=+=+=+=+=+= */
+    .D_home .D_home-text .D_main-text {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .D_home .D_home-text .D_second-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    /* +=+=+=+=+=+= HOME  end   +=+=+=+=+=+= */
+}
