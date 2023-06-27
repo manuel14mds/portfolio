@@ -16,6 +16,7 @@
   /* thin-100, extralight-200, light-300, regular-400, medium-500, semibold-700, bold-700 */
   --font: 'Roboto Serif', serif;
   font-family: var(--font);
+  scroll-behavior: smooth;
 }
 .scroll-tracker{
   position: fixed;
