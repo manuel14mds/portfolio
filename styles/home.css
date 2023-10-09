@@ -1,75 +1,13 @@
-.profile_container {
-    margin-top: 10px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    color: var(--color-black);
-}
-.profile_container .profile-text{
-    width: 60%;
-    max-height: 300px;
-    overflow-y: scroll;
-    position: relative;
-    padding: 10px 0px 0px 15px;
-}
-.profile_container .profile-text .profile-title{
-    inset: 0 auto auto 0;
-}
-.profile_container .profile-text .profile-info{
-    font-size: 0.7rem;
-    font-weight: 100;
-    text-align: justify;
-}
-.profile_container .profile-image-container{
-    width: 40%;
-    height: 250px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-}
-.profile_container .profile-image-container .profile-image{
-    height: 100%;
-}
-
 
 /* phablets */
 @media (min-width: 500px) {
-    .profile_container .profile-text{
-        padding: 10px 0px 0px 20px;
-    }
-    .profile_container .profile-text .profile-info{
-        font-size: 0.8rem;
-        font-weight: 200;
-    }
     
 }
 /* tablets */
 @media (min-width: 750px) {
-    .profile_container {
-        margin-top: 10px;
-        height: 360px;
-    }
-    .profile_container .profile-text{
-        padding-left: 30px;
-    }
-    .profile_container .profile-text .profile-title{
-        margin-bottom: 15px;
-    }
 
-    .profile_container .profile-text .profile-info{
-        font-size: 1rem;
-    }
-    .profile_container .profile-image-container{
-        height: 360px;
-    }
 }
 /* desktop */
 @media (min-width: 1024px) {
-    .profile_container .profile-text .profile-info{
-        max-width: 640px;
-        font-size: 1.1rem;
-    }
-    .profile_container .profile-image-container{
-        height: 400px;
-    }
+
 }
